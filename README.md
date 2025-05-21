@@ -45,6 +45,7 @@ library/               # Main project folder
 
 
 📦 Database
+
 Foreign Keys & Relationships:
 Relationships are defined using SQLAlchemy’s relationship() and foreign key constraints. Cascading deletes are carefully 
 managed using passive_deletes=True to avoid unintentional data loss while maintaining referential integrity.
@@ -55,6 +56,7 @@ management of active borrows and return operations, and supports enforcing busin
 
 
 🧠 Business Logic
+
 1. Copy Management:
 To manage book availability, a copy field was added to the Book model. When a book is borrowed, this field is decremented
 by 1. When a book is returned, it is incremented. If the copy count is 0, the user is prevented from borrowing the book.
@@ -69,6 +71,7 @@ one in the borrow record. If they match, the return is processed; otherwise, an 
 
 
 🔐 Password Hashing & Token Authentication
+
 1. Password Security:
 Password hashing and verification are handled using the passlib library to ensure secure storage and comparison of user
 passwords.
@@ -83,6 +86,7 @@ protected resources.
 
 
 🧱 Challenges Faced & How I Solved Them
+
 While building this project, I faced quite a few challenges. One of them was checking whether a user is properly 
 authenticated using a JWT token. I also ran into issues with Pydantic validation when the input data didn't match the
 expected schema. Some bugs popped up too—like the case where a user could borrow the same book twice.
