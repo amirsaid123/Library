@@ -13,22 +13,39 @@ A FastAPI-based backend for managing books, readers, and borrow/return records i
 ## 🏗 Project Structure
 
 library/               # Main project folder
+
 ├── alembic/           # Alembic migration files
+
 ├── library/           # Application package
+
 │   ├── crud/          # Database CRUD operations and functions
+
 │   ├── endpoints/     # API endpoint route definitions
+
 │   ├── tests/         # API tests
+
 │   ├── config/        # Configuration (loads .env variables)
+
 │   ├── database/      # Database connection and session management
+
 │   ├── models/        # SQLAlchemy ORM models
+
 │   ├── schemas/       # Pydantic schemas for validation
+
 │   └── utils/         # Helper utilities (e.g., password hashing, token creation)
+
 ├── env_copy           # Example env file (copy this to .env with your database credentials)
+
 ├── .gitignore         # Git ignore rules
+
 ├── .pytest.ini        # pytest configuration file
+
 ├── .alembic.ini       # alembic configuration file
+
 ├── .seed_data.py      # a script that adds fake data into database making it easier to work with, run this file after creating the tables
+
 ├── Makefile           # Simplified Alembic commands
+
 └── requirements.txt   # Project dependencies
 
 
