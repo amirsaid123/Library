@@ -99,6 +99,6 @@ Whenever I got stuck, I relied on Google, official documentation, Reddit, Stack 
 AI assistants. I want to point out that I didn’t blindly copy and paste solutions—instead, 
 I took the time to understand each fix and learn from it. Even if I spent countless hours searching, it was worth it.
 
-In conclusion, this project was a valuable learning experience that helped me grow as a developer._
+In conclusion, this project was a valuable learning experience that helped me grow as a developer.
 
 
